@@ -45,10 +45,36 @@
   align-items: center;
 }
 
-.menu_item{
-  padding: 0 13px;
+.menu__item{
+  position: relative;
+  margin-right: 26px;
+  font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
+  color: #000;
+  text-decoration: none;
 }
 
-.menu_item:last-child{
+.menu__item:last-child{
   padding-right: 0;
+}
+
+.menu__item:hover{
+  opacity: .7;
+}
+
+.menu__item:after{
+  position: absolute;
+  display: block;
+  content: '';
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: #0056EC;
+  opacity: 0;
+  transition: opacity .5s, width .5s;
+  transform: translateX(-50%);
+}
+
+.menu__item:hover:after, .menu__item_active:after{
+  opacity: 1;
+  width: 100%;
 }
