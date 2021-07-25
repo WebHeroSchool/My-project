@@ -92,17 +92,17 @@
 
 .main__title-text_highlight{
   background: linear-gradient(
-  180deg, rgba(255, 255, 255, 1) 15%, #ECF3FF 15%);  
+  180deg, rgba(255, 255, 255, 1) 15%, #ECF3FF 15%);
 }
 
 .main__subtitle{
-  margin: 0 0 41px 0;
+  margin: 0 80px 42px 0;
   font: 22px/25px robotoregular, arial, helvetica, sans-serif;
 }
 
 .main__button{
   display: inline-block;
-  padding: 19px 32px 20px 21px;
+  padding: 19px 32px 17px 21px;
   font: 18px/21px robotomedium, arial, helvetica, sans-serif;
   border-radius: 4px;
   color: #fff;
@@ -119,4 +119,181 @@
   display: block;
   margin: auto;
   margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .wrapper{
+    width: 100%;
+  }
+  .logo{
+    display: none;
+  }
+  .logo-circles{
+    width: 36px;
+    height: 35px;
+    background: no-repeat url('img/circles.svg');
+  }
+  .menu{
+    display: none;
+  }
+  .header{
+    padding: 16px 42px 28px 16px;
+    margin: 0;
+  }
+  #toggle{
+    display: none;
+  }
+  .menu-burger{
+    padding-top: 15px;
+  }
+  .menu__btn{
+    display: flex;
+    position: absolute;
+    position: fixed;
+    width: 25px;
+    height: 17px;
+    padding-bottom: 10px;
+    z-index: 1;
+  }
+  .menu__btn> span,
+  .menu__btn> span::after,
+  .menu__btn> span::before{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background: #0056EC;
+  }
+  .menu__btn> span::after{
+    top: 7px;
+  }
+  .menu__btn> span::before{
+    top: -7px;
+  }
+  .menu__box{
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    margin: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    list-style: none;
+    text-align: center;
+    background: #FFF;
+  }
+  .list{
+    margin: 186px 119px 205px 114px;
+  }
+  .menu__item{
+    display: block;
+    margin-bottom: 24px;
+    font: 30px/35px robotomedium, arial, helvetica, sans-serif;
+    text-decoration: none;
+  }
+  .menu__item_last{
+    margin-top: 26px;
+  }
+  #toggle:checked ~ .menu__box{
+    visibility: visible;
+    right: 0;
+  }
+  #toggle:checked ~ .menu__btn > span{
+    transform: rotate(45deg);
+  }
+  #toggle:checked ~ .menu__btn > span::before{
+    height: 0;
+    transform: rotate(0);
+  }
+  #toggle:checked ~ .menu__btn > span::after{
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  .main{
+    text-align: center;
+    padding: 73% 0 0 3%;
+    background-size: 79%;
+    background-position: top center;
+  }
+  .main__title{
+    margin-bottom: 34px;
+    font: bold 30px/39px pt_serifbold, arial, helvetica, sans-serif;
+  }
+  .main__subtitle{
+    margin: 0 53px 27px 53px;
+    font: 16px/19px robotomedium, arial, helvetica, sans-serif;
+  }
+  .main__button{
+    padding: 14px 25px 13px 11px;
+    width: 172px;
+    font: 14px/16px robotomedium, arial, helvetica, sans-serif;
+  }
+  .img__points{
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .menu-burger{
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1025px) {
+  .wrapper{
+    width: 92%;
+  }
+  .header{
+    margin-bottom: 94px;
+  }
+  .menu__item{
+    margin-right: 26px;
+    font: 14px/16px robotomedium, arial, helvetica, sans-serif;
+  }
+  .main{
+    padding: 16px 50% 145px 0;
+    margin-right: 0;
+    background-size: 55%;
+  }
+  .main__title{
+    font: bold 50px/66px pt_serifbold, arial, helvetica, sans-serif;
+  }
+  .main__subtitle{
+    font: 18px/21px robotomedium, arial, helvetica, sans-serif;
+  }
+  .main__button{
+    padding: 14px 26px 14px 13px;
+    font: 14px/16px robotomedium, arial, helvetica, sans-serif;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1367px){
+  .wrapper{
+    width: 69%;
+  }
+  .header{
+    margin-bottom: 93px;
+  }
+  .menu__item{
+    margin-right: 26px;
+    font: 14px/16px robotomedium, arial, helvetica, sans-serif;
+  }
+  .menu__item:last-child{
+    margin-right: 5px;
+  }
+  .main{
+    padding: 17px 50% 150px 0;
+    margin-right: 0;
+    background-size: 55%;
+  }
+  .main__title{
+    font: bold 50px/66px pt_serifbold, arial, helvetica, sans-serif;
+  }
+  .main__subtitle{
+    font: 18px/21px robotomedium, arial, helvetica, sans-serif;
+  }
+  .main__button{
+    padding: 14px 26px 13px 17px;
+    font: 14px/16px robotomedium, arial, helvetica, sans-serif;
+  }
 }
