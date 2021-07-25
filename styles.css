@@ -120,6 +120,63 @@
   margin: auto;
   margin-bottom: 40px;
 }
+@media (max-width: 1366px){
+  .wrapper{
+    width: 69%;
+  }
+  .header{
+    margin-bottom: 93px;
+  }
+  .menu__item{
+    margin-right: 26px;
+    font: 14px/16px robotomedium, arial, helvetica, sans-serif;
+  }
+  .menu__item:last-child{
+    margin-right: 5px;
+  }
+  .main{
+    padding: 17px 50% 150px 0;
+    margin-right: 0;
+    background-size: 55%;
+  }
+  .main__title{
+    font: bold 50px/66px pt_serifbold, arial, helvetica, sans-serif;
+  }
+  .main__subtitle{
+    font: 18px/21px robotomedium, arial, helvetica, sans-serif;
+  }
+  .main__button{
+    padding: 14px 26px 13px 17px;
+    font: 14px/16px robotomedium, arial, helvetica, sans-serif;
+  }
+}
+@media (max-width: 1024px) {
+  .wrapper{
+    width: 92%;
+  }
+  .header{
+    margin-bottom: 94px;
+  }
+  .menu__item{
+    margin-right: 26px;
+    font: 14px/16px robotomedium, arial, helvetica, sans-serif;
+  }
+  .main{
+    padding: 16px 50% 145px 0;
+    margin-right: 0;
+    background-size: 55%;
+  }
+  .main__title{
+    font: bold 50px/66px pt_serifbold, arial, helvetica, sans-serif;
+  }
+  .main__subtitle{
+    font: 18px/21px robotomedium, arial, helvetica, sans-serif;
+  }
+  .main__button{
+    padding: 14px 26px 14px 13px;
+    font: 14px/16px robotomedium, arial, helvetica, sans-serif;
+  }
+}
 @media (max-width: 768px) {
   .wrapper{
     width: 100%;
@@ -238,62 +295,5 @@
 @media (min-width: 768px) {
   .menu-burger{
     display: none;
-  }
-}
-@media (min-width: 768px) and (max-width: 1025px) {
-  .wrapper{
-    width: 92%;
-  }
-  .header{
-    margin-bottom: 94px;
-  }
-  .menu__item{
-    margin-right: 26px;
-    font: 14px/16px robotomedium, arial, helvetica, sans-serif;
-  }
-  .main{
-    padding: 16px 50% 145px 0;
-    margin-right: 0;
-    background-size: 55%;
-  }
-  .main__title{
-    font: bold 50px/66px pt_serifbold, arial, helvetica, sans-serif;
-  }
-  .main__subtitle{
-    font: 18px/21px robotomedium, arial, helvetica, sans-serif;
-  }
-  .main__button{
-    padding: 14px 26px 14px 13px;
-    font: 14px/16px robotomedium, arial, helvetica, sans-serif;
-  }
-}
-@media (min-width: 1025px) and (max-width: 1367px){
-  .wrapper{
-    width: 69%;
-  }
-  .header{
-    margin-bottom: 93px;
-  }
-  .menu__item{
-    margin-right: 26px;
-    font: 14px/16px robotomedium, arial, helvetica, sans-serif;
-  }
-  .menu__item:last-child{
-    margin-right: 5px;
-  }
-  .main{
-    padding: 17px 50% 150px 0;
-    margin-right: 0;
-    background-size: 55%;
-  }
-  .main__title{
-    font: bold 50px/66px pt_serifbold, arial, helvetica, sans-serif;
-  }
-  .main__subtitle{
-    font: 18px/21px robotomedium, arial, helvetica, sans-serif;
-  }
-  .main__button{
-    padding: 14px 26px 13px 17px;
-    font: 14px/16px robotomedium, arial, helvetica, sans-serif;
   }
 }
