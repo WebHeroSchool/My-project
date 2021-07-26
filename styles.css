@@ -1,4 +1,3 @@
-
 .wrapper{
   margin: auto;
   width: 80%;
@@ -110,11 +109,9 @@
   text-decoration: none;
   transition: opacity .5s;
 }
-
 .main__button:hover{
   opacity: .5;
 }
-
 .img__points{
   display: block;
   margin: auto;
@@ -160,6 +157,9 @@
   .menu__item{
     margin-right: 26px;
     font: 14px/16px robotomedium, arial, helvetica, sans-serif;
+  }
+  .menu__item:last-child{
+    margin-right: 0;
   }
   .main{
     padding: 16px 50% 145px 0;
@@ -242,7 +242,7 @@
     background: #FFF;
   }
   .list{
-    margin: 186px 119px 205px 114px;
+    margin: 186px 110px 205px 114px;
   }
   .menu__item{
     display: block;
@@ -252,6 +252,7 @@
   }
   .menu__item_last{
     margin-top: 26px;
+    padding-right: 4px;
   }
   #toggle:checked ~ .menu__box{
     visibility: visible;
@@ -271,7 +272,7 @@
 
   .main{
     text-align: center;
-    padding: 73% 0 0 3%;
+    padding: 73% 0 0 2%;
     background-size: 79%;
     background-position: top center;
   }
@@ -284,8 +285,9 @@
     font: 16px/19px robotomedium, arial, helvetica, sans-serif;
   }
   .main__button{
-    padding: 14px 25px 13px 11px;
-    width: 172px;
+    margin-right: 1%;
+    padding: 14px 17px 13px 6px;
+    width: 187px;
     font: 14px/16px robotomedium, arial, helvetica, sans-serif;
   }
   .img__points{
