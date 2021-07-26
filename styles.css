@@ -2,20 +2,17 @@
   margin: auto;
   width: 80%;
 }
-
 .header{
   display: flex;
   justify-content: space-between;
   margin-bottom: 143px;
 }
-
 .logo{
   position: relative;
   padding: 32px 0;
   padding-left: 44px;
   font: bold 24px/31px pt_serifbold, arial, helvetica, sans-serif;
 }
-
 .logo__circle{
   position: absolute;
   left: 0;
@@ -26,23 +23,19 @@
   border-radius: 50%;
   opacity: .7;
 }
-
 .logo__circle_color_dark-blue{
   background: #0056EC;
 }
-
 .logo__circle_color_blue{
   left: 8px;
   top: 56%;
   background: #C8DBFB;
 }
-
 .menu{
   display: flex;
   align-items: center;
   padding-top: 7px;
 }
-
 .menu__item{
   position: relative;
   margin-right: 28px;
@@ -50,15 +43,12 @@
   color: #000;
   text-decoration: none;
 }
-
 .menu__item:last-child{
   margin-right: 0;
 }
-
 .menu__item:hover{
   opacity: .7;
 }
-
 .menu__item:after{
   position: absolute;
   display: block;
@@ -71,34 +61,28 @@
   transition: opacity .5s, width .5s;
   transform: translateX(-50%);
 }
-
 .menu__item:hover:after, .menu__item_active:after{
   opacity: 1;
   width: 100%;
 }
-
 .main{
   padding: 71px 63% 268px 0;
   margin-right: 5px;
   background: top right no-repeat url(img/main-img.svg);
   background-size: 50%;
 }
-
 .main__title{
   margin: 0 0 38px 0;
   font: bold 66px/87px pt_serifbold, arial, helvetica, sans-serif;
 }
-
 .main__title-text_highlight{
   background: linear-gradient(
   180deg, rgba(255, 255, 255, 1) 15%, #ECF3FF 15%);
 }
-
 .main__subtitle{
   margin: 0 80px 42px 0;
   font: 22px/25px robotoregular, arial, helvetica, sans-serif;
 }
-
 .main__button{
   display: inline-block;
   padding: 19px 32px 17px 21px;
@@ -116,7 +100,13 @@
 .img__points{
   display: block;
   margin: auto;
-  margin-bottom: 40px;
+}
+
+@media (max-width: 1760px) {
+
+  .main{
+    padding-bottom: 90px;
+  }
 }
 @media (max-width: 1367px){
   .wrapper{
@@ -148,11 +138,14 @@
     font: 14px/16px robotomedium, arial, helvetica, sans-serif;
   }
 }
+
 @media (max-width: 1250px) {
   .main{
-  background-size: 50%;
+    background-size: 50%;
+    padding-bottom: 90px;
   }
 }
+
 @media (max-width: 1025px) {
   .wrapper{
     width: 92%;
@@ -183,39 +176,50 @@
     font: 14px/16px robotomedium, arial, helvetica, sans-serif;
   }
 }
+
 @media (max-width: 950px) {
   .wrapper{
     width: 98%;
   }
   .main{
+    padding-bottom: 90px;
     background-size: 43%;
   }
 }
-@media (max-width: 769px) {
+
+@media (max-width: 771px) {
+
   .wrapper{
-    width: 100%;
+    width: 75%;
   }
+
   .logo{
     display: none;
   }
+
   .logo-circles{
     width: 36px;
     height: 35px;
     background: no-repeat url('img/circles.svg');
   }
+
   .menu{
     display: none;
   }
+
   .header{
     padding: 16px 42px 28px 16px;
     margin: 0;
   }
+
   #toggle{
     display: none;
   }
+
   .menu-burger{
     padding-top: 15px;
   }
+
   .menu__btn{
     display: flex;
     position: absolute;
@@ -225,6 +229,7 @@
     padding-bottom: 10px;
     z-index: 1;
   }
+
   .menu__btn> span,
   .menu__btn> span::after,
   .menu__btn> span::before{
@@ -237,12 +242,15 @@
     height: 3px;
     background: #0056EC;
   }
+
   .menu__btn> span::after{
     top: 7px;
   }
+
   .menu__btn> span::before{
     top: -7px;
   }
+
   .menu__box{
     display: block;
     position: fixed;
@@ -255,30 +263,39 @@
     text-align: center;
     background: #FFF;
   }
+
   .list{
     margin: 186px 115px 205px 114px;
+    padding: 0;
+    list-style-type: none;
   }
+
   .menu__item{
     display: block;
     margin-bottom: 24px;
     font: 30px/35px robotomedium, arial, helvetica, sans-serif;
     text-decoration: none;
   }
+
   .menu__item_last{
     margin-top: 26px;
     padding-right: 4px;
   }
+
   #toggle:checked ~ .menu__box{
     visibility: visible;
     right: 0;
   }
+
   #toggle:checked ~ .menu__btn > span{
     transform: rotate(45deg);
   }
+
   #toggle:checked ~ .menu__btn > span::before{
     height: 0;
     transform: rotate(0);
   }
+
   #toggle:checked ~ .menu__btn > span::after{
     top: 0;
     transform: rotate(90deg);
@@ -290,24 +307,36 @@
     background-size: 79%;
     background-position: top center;
   }
+
   .main__title{
     margin-bottom: 34px;
     font: bold 30px/39px pt_serifbold, arial, helvetica, sans-serif;
   }
+
   .main__subtitle{
     margin: 0 53px 27px 53px;
     font: 16px/19px robotomedium, arial, helvetica, sans-serif;
   }
+
   .main__button{
     margin-right: 1%;
     padding: 14px 17px 13px 6px;
     width: 187px;
     font: 14px/16px robotomedium, arial, helvetica, sans-serif;
   }
+
   .img__points{
     display: none;
   }
 }
+
+@media (max-width: 700px) {
+
+  .wrapper{
+    width: 100%;
+  }
+}
+
 @media (min-width: 768px) {
   .menu-burger{
     display: none;
