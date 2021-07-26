@@ -268,10 +268,12 @@
     transform: rotate(45deg);
   }
   #toggle:checked ~ .menu__btn > span::before{
-    height: 0;transform: rotate(0);
+    height: 0;
+    transform: rotate(0);
   }
   #toggle:checked ~ .menu__btn > span::after{
-    top: 0;transform: rotate(90deg);
+    top: 0;
+    transform: rotate(90deg);
   }
   .main{
     text-align: center;
@@ -293,7 +295,9 @@
     width: 187px;
     font: 14px/16px robotomedium, arial, helvetica, sans-serif;
   }
-  .img__points{display: none;}
+  .img__points{
+    display: none;
+  }
 }
 @media (max-width: 700px) {
   .wrapper{
