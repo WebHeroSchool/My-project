@@ -147,6 +147,11 @@
     font: 14px/16px robotomedium, arial, helvetica, sans-serif;
   }
 }
+@media (max-width: 1250px) {
+  .main{
+  background-size: 50%;
+  }
+}
 @media (max-width: 1025px) {
   .wrapper{
     width: 92%;
@@ -175,6 +180,14 @@
   .main__button{
     padding: 14px 26px 14px 13px;
     font: 14px/16px robotomedium, arial, helvetica, sans-serif;
+  }
+}
+@media (max-width: 950px) {
+  .wrapper{
+    width: 98%;
+  }
+  .main{
+    background-size: 43%;
   }
 }
 @media (max-width: 769px) {
@@ -242,7 +255,7 @@
     background: #FFF;
   }
   .list{
-    margin: 186px 110px 205px 114px;
+    margin: 186px 115px 205px 114px;
   }
   .menu__item{
     display: block;
