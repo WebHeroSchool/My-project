@@ -102,6 +102,7 @@
   margin: auto;
 }
 @media (max-width: 1760px) {
+
   .main{
     padding-bottom: 90px;
   }
@@ -182,9 +183,11 @@
   }
 }
 @media (max-width: 771px) {
+
   .wrapper{
     width: 75%;
   }
+
   .logo{
     display: none;
   }
@@ -300,6 +303,7 @@
   }
 }
 @media (max-width: 700px) {
+  
   .wrapper{
     width: 100%;
   }
